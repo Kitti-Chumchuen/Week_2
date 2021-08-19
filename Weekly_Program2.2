@@ -1,0 +1,28 @@
+#include <stdio.h>
+int main () 
+{
+	int num[10];
+  printf("Enter first number  : ");
+  scanf("%d", &num[1]);
+  printf("Enter second number : ");
+  scanf("%d", &num[2]);
+  printf("Enter third number  : ");
+	scanf("%d", &num[3]);
+  int sum1, sum2, sum3;
+  sum1 = num[1]+num[2];
+  sum2 = num[2]+num[3];
+  sum3 = num[1]+num[3];
+  if(sum1 > sum2 && sum1 > sum3)
+  {
+   printf("The greatest value  : %d + %d = %d", num[1], num[2], sum1);
+  }
+  if(sum2 > sum1 && sum2 > sum3)
+  {
+   printf("The greatest value  : %d + %d = %d", num[2], num[3], sum2);
+  }
+  if(sum3 > sum1 && sum3 > sum2)
+  {
+   printf("The greatest value  : %d + %d = %d", num[1], num[3], sum3);
+  }
+    return 0;
+}
