@@ -1,0 +1,27 @@
+#include <stdio.h>
+int main () 
+{
+	int a, b, c;
+  printf("Enter first number  : ");
+  scanf("%d", &a);
+  printf("Enter second number : ");
+  scanf("%d", &b);
+  printf("Enter third number  : ");
+	scanf("%d", &c);
+  int d = a + b;
+  int e = b + c;
+  int f = a + c;
+  if(d > e && d > f)
+  {
+   printf("The greatest value  : %d + %d = %d", a, b, d);
+  }
+  if(e > d && e > f)
+  {
+    printf("The greatest value : %d + %d = %d", b, c, e);
+  }
+  if(f > d && f > e)
+  {
+    printf("The greatest value : %d + %d = %d", a, c, f);
+  }
+    return 0;
+}
